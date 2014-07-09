@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nwE-Vo-540">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+    </dependencies>
+    <scenes>
+        <!--Menu Controller-->
+        <scene sceneID="lwH-lO-nBw">
+            <objects>
+                <viewController storyboardIdentifier="BasementController" id="iH7-Ju-Yqg" customClass="MenuController" customModule="BetterBasement" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PdP-mf-C95"/>
+                        <viewControllerLayoutGuide type="bottom" id="zwg-Mi-ZWq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RtJ-0V-GNK">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3V-Iv-bTK">
+                                <rect key="frame" x="280" y="0.0" width="200" height="480"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="160" translatesAutoresizingMaskIntoConstraints="NO" id="fEm-IY-pja">
+                                        <rect key="frame" x="20" y="219" width="160" height="42"/>
+                                        <string key="text">Look at me!
+I'm a basement!</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="0.0" alpha="0.51000000000000001" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="1" alpha="0.48999999999999999" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fEm-IY-pja" firstAttribute="leading" secondItem="X3V-Iv-bTK" secondAttribute="leading" constant="20" id="KNd-XB-onk"/>
+                                    <constraint firstAttribute="centerY" secondItem="fEm-IY-pja" secondAttribute="centerY" id="RvZ-UR-n3Y"/>
+                                    <constraint firstAttribute="width" constant="200" id="cuZ-U0-bC1"/>
+                                    <constraint firstAttribute="trailing" secondItem="fEm-IY-pja" secondAttribute="trailing" constant="20" id="kRS-vi-FXA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SB-me-yA6">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="480"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="screenshotTapped:" destination="iH7-Ju-Yqg" eventType="touchUpInside" id="52D-QT-8gZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="9SB-me-yA6" firstAttribute="top" secondItem="RtJ-0V-GNK" secondAttribute="top" id="DFp-vJ-IZY"/>
+                            <constraint firstItem="X3V-Iv-bTK" firstAttribute="top" secondItem="RtJ-0V-GNK" secondAttribute="top" id="DJK-he-9Ti"/>
+                            <constraint firstAttribute="trailing" secondItem="X3V-Iv-bTK" secondAttribute="trailing" id="P5M-6e-HDe"/>
+                            <constraint firstItem="zwg-Mi-ZWq" firstAttribute="top" secondItem="9SB-me-yA6" secondAttribute="bottom" id="PEc-QD-QeQ"/>
+                            <constraint firstItem="X3V-Iv-bTK" firstAttribute="leading" secondItem="9SB-me-yA6" secondAttribute="trailing" id="aPP-gl-1jS"/>
+                            <constraint firstItem="9SB-me-yA6" firstAttribute="leading" secondItem="RtJ-0V-GNK" secondAttribute="leading" id="ey1-px-SVB"/>
+                            <constraint firstItem="zwg-Mi-ZWq" firstAttribute="top" secondItem="X3V-Iv-bTK" secondAttribute="bottom" id="r7m-Ih-pgq"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="backButton" destination="9SB-me-yA6" id="Wr0-JO-fmI"/>
+                        <outlet property="menuView" destination="X3V-Iv-bTK" id="k6y-Bq-tpu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCn-iW-bFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747" y="361"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xAa-hO-OFa">
+            <objects>
+                <navigationController id="nwE-Vo-540" customClass="NavigationController" customModule="BetterBasement" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1hk-35-XSd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="630-01-4X7" kind="relationship" relationship="rootViewController" id="ANt-tZ-56T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7wi-1S-be2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-470" y="361"/>
+        </scene>
+        <!--Better Basement-->
+        <scene sceneID="jFk-Lh-1be">
+            <objects>
+                <viewController id="630-01-4X7" customClass="ViewController" customModule="BetterBasement" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xva-RI-8kX"/>
+                        <viewControllerLayoutGuide type="bottom" id="rJF-AE-uvI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NhV-6t-iHz">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Better Basement" id="Ojh-8R-BQk">
+                        <barButtonItem key="rightBarButtonItem" image="Burger" id="KBT-EJ-TJ9"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuItem" destination="KBT-EJ-TJ9" id="9aa-B4-OpD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Le-3v-6vQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="361"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Burger" width="18" height="17"/>
+    </resources>
+</document>

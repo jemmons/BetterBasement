@@ -14,7 +14,7 @@ class MenuController : UIViewController, AnimatingMenu {
   weak var storedSnapshot:UIView?
   
   
-  init(coder aDecoder: NSCoder!){
+  required init(coder aDecoder: NSCoder){
     super.init(coder: aDecoder)
     modalPresentationStyle = UIModalPresentationStyle.Custom
     self.transitioningDelegate = self

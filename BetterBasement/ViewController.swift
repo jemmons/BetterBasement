@@ -8,10 +8,10 @@ class ViewController: UIViewController {
     menuItem.action = Selector("menuTapped:")
   }
   
-  override func childViewControllerForStatusBarHidden()->UIViewController!{
+  override func childViewControllerForStatusBarHidden()->UIViewController?{
     if let it = presentedViewController{
       return it
-    } else{
+    } else {
       return nil
     }
   }

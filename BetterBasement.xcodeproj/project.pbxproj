@@ -15,6 +15,7 @@
 		73AED92A195131C7006EB9FE /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AED929195131C7006EB9FE /* NavigationController.swift */; };
 		73F8FD6B195F0320008119D8 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8FD6A195F0320008119D8 /* MenuController.swift */; };
 		73F8FD6F195F0A4F008119D8 /* MenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8FD6E195F0A4F008119D8 /* MenuAnimationController.swift */; };
+		76C692071A2538EC00B04545 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C692061A2538EC00B04545 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		73AED929195131C7006EB9FE /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		73F8FD6A195F0320008119D8 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		73F8FD6E195F0A4F008119D8 /* MenuAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAnimationController.swift; sourceTree = "<group>"; };
+		76C692061A2538EC00B04545 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				73AED929195131C7006EB9FE /* NavigationController.swift */,
 				7343254919451C030002F11A /* ViewController.swift */,
 				7343254B19451C030002F11A /* Main.storyboard */,
+				76C692061A2538EC00B04545 /* LaunchScreen.xib */,
 			);
 			name = Root;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7343254D19451C030002F11A /* Main.storyboard in Resources */,
+				76C692071A2538EC00B04545 /* LaunchScreen.xib in Resources */,
 				7343254F19451C030002F11A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

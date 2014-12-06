@@ -15,6 +15,9 @@
 		73AED92A195131C7006EB9FE /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AED929195131C7006EB9FE /* NavigationController.swift */; };
 		73F8FD6B195F0320008119D8 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8FD6A195F0320008119D8 /* MenuController.swift */; };
 		73F8FD6F195F0A4F008119D8 /* MenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8FD6E195F0A4F008119D8 /* MenuAnimationController.swift */; };
+		76C692071A2538EC00B04545 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C692061A2538EC00B04545 /* LaunchScreen.xib */; };
+		76C6920A1A2539AA00B04545 /* PercentDrivenInteractiveTransitionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C692091A2539AA00B04545 /* PercentDrivenInteractiveTransitionProtocol.swift */; };
+		76C6920C1A253AB600B04545 /* PercentDrivenInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6920B1A253AB600B04545 /* PercentDrivenInteractiveTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		73AED929195131C7006EB9FE /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		73F8FD6A195F0320008119D8 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		73F8FD6E195F0A4F008119D8 /* MenuAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAnimationController.swift; sourceTree = "<group>"; };
+		76C692061A2538EC00B04545 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		76C692091A2539AA00B04545 /* PercentDrivenInteractiveTransitionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentDrivenInteractiveTransitionProtocol.swift; sourceTree = "<group>"; };
+		76C6920B1A253AB600B04545 /* PercentDrivenInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentDrivenInteractiveTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				7343254E19451C030002F11A /* Images.xcassets */,
+				76C692081A25397900B04545 /* Interactive */,
 				73F8FD6D195F0353008119D8 /* Root */,
 				73F8FD6C195F033B008119D8 /* Menu */,
 				7343254519451C030002F11A /* Supporting Files */,
@@ -130,8 +137,18 @@
 				73AED929195131C7006EB9FE /* NavigationController.swift */,
 				7343254919451C030002F11A /* ViewController.swift */,
 				7343254B19451C030002F11A /* Main.storyboard */,
+				76C692061A2538EC00B04545 /* LaunchScreen.xib */,
 			);
 			name = Root;
+			sourceTree = "<group>";
+		};
+		76C692081A25397900B04545 /* Interactive */ = {
+			isa = PBXGroup;
+			children = (
+				76C692091A2539AA00B04545 /* PercentDrivenInteractiveTransitionProtocol.swift */,
+				76C6920B1A253AB600B04545 /* PercentDrivenInteractiveTransition.swift */,
+			);
+			name = Interactive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7343254D19451C030002F11A /* Main.storyboard in Resources */,
+				76C692071A2538EC00B04545 /* LaunchScreen.xib in Resources */,
 				7343254F19451C030002F11A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,8 +254,10 @@
 				73F8FD6F195F0A4F008119D8 /* MenuAnimationController.swift in Sources */,
 				73F8FD6B195F0320008119D8 /* MenuController.swift in Sources */,
 				7343254A19451C030002F11A /* ViewController.swift in Sources */,
+				76C6920A1A2539AA00B04545 /* PercentDrivenInteractiveTransitionProtocol.swift in Sources */,
 				73AED92A195131C7006EB9FE /* NavigationController.swift in Sources */,
 				7343254819451C030002F11A /* AppDelegate.swift in Sources */,
+				76C6920C1A253AB600B04545 /* PercentDrivenInteractiveTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
